@@ -13,8 +13,64 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "VLP - Portfolio",
-  description: "Portfolio Website of VLP, studant and enthusiast technology",
+  title: {
+    default: "Vinicius Lima Pazos | Software Developer",
+    template: "%s | Vinicius Lima Portfolio",
+  },
+  description:
+    "Portfolio of Vinicius Lima Pazos - A passionate Software Developer and technology enthusiast. Explore my projects, skills, and get in touch for collaborations.",
+  keywords: [
+    "Vinicius Lima Pazos",
+    "VLP",
+    "Software Developer",
+    "Web Developer",
+    "Portfolio",
+    "React",
+    "Next.js",
+    "TypeScript",
+    "JavaScript",
+    "Frontend Developer",
+    "Backend Developer",
+    "Software Engineer",
+    "Brazil",
+    "World"
+  ],
+  authors: [{ name: "Vinicius Lima", url: "https://github.com/viniciuslimadoc" }],
+  creator: "Vinicius Lima",
+  publisher: "Vinicius Lima",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  openGraph: {
+    type: "website",
+    locale: "pt_BR",
+    url: "https://vlp-portf.vercel.app", 
+    siteName: "Vinicius Lima Portfolio",
+    title: "Vinicius Lima | Full Stack Developer & Tech Enthusiast",
+    description:
+      "Portfolio of Vinicius Lima - A passionate Full Stack Developer and technology enthusiast. Explore my projects, skills, and get in touch for collaborations.",
+    images: [
+      {
+        url: "/portf.png",
+        width: 1200,
+        height: 630,
+        alt: "VLP - Portfolio",
+      },
+    ],
+  },
+  metadataBase: new URL("https://vlp-portf.vercel.app"), 
+  alternates: {
+    canonical: "/",
+  },
+  category: "technology",
 };
 
 export default function RootLayout({

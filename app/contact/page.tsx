@@ -74,9 +74,9 @@
 
 "use client";
 
-import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { useState } from "react";
 import { BsArrowLeft } from "react-icons/bs";
 
 export default function About() {
@@ -104,6 +104,11 @@ export default function About() {
             if (response.ok) {
                 setStatus("Message sent successfully! I'll get back to you as soon as possible.");
                 (event.target as HTMLFormElement).reset();
+            } else if (response.status === 429) {
+                // Rate limit exceeded
+                const errorData = await response.json();
+                const minutes = Math.ceil(errorData.retryAfterSeconds / 60);
+                setStatus(`Too many requests. Please wait ${minutes} minute(s) before trying again.`);
             } else {
                 setStatus("Error sending message. Please try again.");
             }
@@ -130,10 +135,10 @@ export default function About() {
                         <p className="text-pretty text-neutral-200 tracking-tight">
                             I'm always open to new opportunities and challenges.
                         </p>
-                        
+
                         <form onSubmit={handleSubmit} className="space-y-4">
                             <h2 className="text-2xl font-bold text-emerald-400">Contact me</h2>
-                            
+
                             <div className="space-y-2">
                                 <label className="text-neutral-300">What's your name?</label>
                                 <input name="name" type="text" required placeholder="Your Name" className="w-full p-2 rounded-lg border border-gray-700/50 bg-black/40 focus:outline-none focus:border-emerald-400 transition-all text-white" />
@@ -149,8 +154,8 @@ export default function About() {
                                 <textarea name="message" required placeholder="Your Message" className="w-full p-2 h-32 rounded-lg border border-gray-700/50 bg-black/40 focus:outline-none focus:border-emerald-400 transition-all text-white" />
                             </div>
 
-                            <Button 
-                                type="submit" 
+                            <Button
+                                type="submit"
                                 disabled={loading}
                                 className="w-full bg-emerald-500 hover:bg-emerald-600 text-black font-bold"
                             >
