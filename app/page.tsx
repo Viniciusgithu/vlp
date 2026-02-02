@@ -31,7 +31,7 @@ export default function Home() {
         </div>
 
         <div>
-          <h1 className="text-4xl">Hello, everyone! I'm Vinicius</h1>
+          <h1 className="text-4xl">Hello, everyone! </h1>
           <p className="text-pretty tracking-tight mt-3 text-neutral-300">Welcome to my website. {" "}
             <Link href="/contact" className="bg-clip-text text-emerald-400 bg-gradient-to-r from-emerald-400 via-sky-300 to-blue-500 font-bold opacity-90 hover:opacity-100 transition-opacity">Contact me {" "}</Link> for any inquiries or to discuss potential opportunities.
 

@@ -18,7 +18,7 @@ export default function About() {
             <div className="space-y-6">
               <h1 className="text-2xl font-bold text-emerald-400">About me</h1>
               <div className="space-y-4 text-neutral-200 text-pretty tracking-tight">
-                <p>Hello, my name is Vinicius. I'm an enthusiast of the technology advancements that the world is experiencing. <br />
+                <p>Hello, my name is Vinicius Lima Pazos. I'm an enthusiast of the technology advancements that the world is experiencing. <br />
                   So, I'm looking for a way to understand why this happens and how to create it. <br />
                   I'm a person who likes to learn new things and I'm always looking for new challenges.
                 </p>
