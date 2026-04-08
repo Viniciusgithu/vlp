@@ -1,14 +1,12 @@
 'use client'
 
+import { Button } from "@/app/components/ui/button";
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
 import {
   BiBuilding,
-  BiChevronRight,
-  BiLogoGithub,
-  BiLogoLinkedin,
+  BiChevronRight
 } from "react-icons/bi";
-import { HiArrowDown } from "react-icons/hi";
+import Image from 'next/image'
 
 export default function Home() {
   return (
@@ -17,7 +15,7 @@ export default function Home() {
 
         <div className="flex sm:flex-row sm:justify-between sm:items-center flex-col-reverse items-start gap-3 sm:gap-10">
           <div className="flex items-center gap-3">
-            <BiBuilding className="w-5 h-5"/>
+            <BiBuilding className="w-5 h-5" />
             <h3 className="text-gray-400">Worldwide</h3>
           </div>
 
@@ -31,31 +29,37 @@ export default function Home() {
         </div>
 
         <div>
-          <h1 className="text-4xl">Hello, everyone! </h1>
+          <section className="flex items-center justify-between gap-3">
+            <h1 className="text-4xl">Hello, everyone! </h1>
+            <Image src="/vlp.png" alt="Profile Picture" width={128} height={128} className="w-32 h-32 rounded-full border-4 border-green-500 object-cover" />
+
+
+          </section>
           <p className="text-pretty tracking-tight mt-3 text-neutral-300">Welcome to my website. {" "}
-            <Link href="/contact" className="bg-clip-text text-emerald-400 bg-gradient-to-r from-emerald-400 via-sky-300 to-blue-500 font-bold opacity-90 hover:opacity-100 transition-opacity">Contact me {" "}</Link> for any inquiries or to discuss potential opportunities.
+            <span className="bg-clip-text text-emerald-400 bg-gradient-to-r from-emerald-400 via-sky-300 to-blue-500 font-bold opacity-90 hover:opacity-100 transition-opacity">Contact me {" "}</span> for any inquiries or to discuss potential opportunities.
 
           </p>
         </div>
 
         <nav className="space-y-4">
-          <h3 className="text-xl font-bold text-emerald-400">Menu</h3>
+          {/* <h3 className="text-xl font-bold text-emerald-400">Menu</h3> */}
+        
           <section className="flex flex-col gap-3">
 
             <Link href="/about" className="w-1/2 border bg-black/30 border-gray-700/40 flex group items-center justify-between p-3 cursor-pointer transition-colors duration-200 ease-linear hover:bg-zinc-800/40 rounded-lg">
-            <span>About</span>
-            <BiChevronRight className="mr-5 text-2xl translate-x-0 group-hover:translate-x-3 text-gray-300 opacity-0 group-hover:translate-x-3 text-gray-300 opacity-0 group-hover:opacity-100 transition-all duration-200" />
+              <span>About</span>
+              <BiChevronRight className="mr-5 text-2xl translate-x-0 group-hover:translate-x-3 text-gray-300 opacity-0 group-hover:translate-x-3 text-gray-300 opacity-0 group-hover:opacity-100 transition-all duration-200" />
             </Link>
 
             <Link href="/work" className="w-1/2 border bg-black/30 border-gray-700/40 flex group items-center justify-between p-3 cursor-pointer transition-colors duration-200 ease-linear hover:bg-zinc-800/40 rounded-lg">
-            <span>Projects</span>
-            <BiChevronRight className="mr-5 text-2xl translate-x-0 group-hover:translate-x-3 text-gray-300 opacity-0 group-hover:translate-x-3 text-gray-300 opacity-0 group-hover:opacity-100 transition-all duration-200"/>
+              <span>Projects</span>
+              <BiChevronRight className="mr-5 text-2xl translate-x-0 group-hover:translate-x-3 text-gray-300 opacity-0 group-hover:translate-x-3 text-gray-300 opacity-0 group-hover:opacity-100 transition-all duration-200" />
             </Link>
 
-            <Link href="/contact" className="w-1/2 border bg-black/30 border-gray-700/40 flex group items-center justify-between p-3 cursor-pointer transition-colors duration-200 ease-linear hover:bg-zinc-800/40 rounded-lg">
+            {/* <Link href="/contact" className="w-1/2 border bg-black/30 border-gray-700/40 flex group items-center justify-between p-3 cursor-pointer transition-colors duration-200 ease-linear hover:bg-zinc-800/40 rounded-lg">
             <span>Contact</span>
             <BiChevronRight className="mr-5 text-2xl translate-x-0 group-hover:translate-x-3 text-gray-300 opacity-0 group-hover:translate-x-3 text-gray-300 opacity-0 group-hover:opacity-100 transition-all duration-200"/>
-            </Link>
+            </Link> */}
           </section>
         </nav>
 

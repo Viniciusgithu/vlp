@@ -1,8 +1,7 @@
-import Link from "next/link";
+import { Button } from "@/app/components/ui/button";
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
-import { BiLogoGithub, BiLogoLinkedin } from "react-icons/bi";
-import { CgExternal } from "react-icons/cg";
+import Link from "next/link";
+import { BiLogoGithub } from "react-icons/bi";
 import { BsArrowLeft } from "react-icons/bs";
 import projectsData from "../data/projects.json";
 
