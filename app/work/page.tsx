@@ -1,7 +1,7 @@
 import { Button } from "@/app/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
-import { BiLogoGithub } from "react-icons/bi";
+import { BiWorld, BiLogoGithub } from "react-icons/bi";
 import { BsArrowLeft } from "react-icons/bs";
 import projectsData from "../data/projects.json";
 
@@ -61,10 +61,24 @@ export default function About() {
                                                 </a>
                                             </Button>
                                         </>
-                                    ) : (
+                                    ) : project.isPrivate && (
                                         <span className="text-neutral-500 italic hover:text-white duration-300 cursor-not-allowed">🔒 Private Code</span>
                                     )}
                                 </section>
+                                <section className="flex justify-center items-center">
+                                    {project.website ? (
+                                        <>
+                                            <BiWorld />
+                                            <Button variant="ghost" className="hover:bg-black/50 duration-300 hover:text-white rounded-full cursor-pointer">
+                                                <a href={project.website} target="_blank" rel="noopener noreferrer">
+                                                    <span>Website</span>
+                                                </a>
+                                            </Button>
+                                        </>
+                                    ) : null
+                                    }
+                                </section>
+
 
 
                             </div>

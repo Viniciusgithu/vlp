@@ -16,6 +16,14 @@
       "tags": ["Python", "Selenium", "Schedule", "SMTP", "Gmail API"],
       "github": null,
       "isPrivate": true
+    },
+    {
+      "id": 3,
+      "title": "🌍🗽 English Hub",
+      "description": "English Hub is a platform for learning English, with a focus on curated directory of YouTube videos and resources for English learners. Filter by accent, comprehensible input, shadowing practice, idioms, flashcards and more.",
+      "image": "/EnglishHub.png",
+      "tags": ["Next.js", "TypeScript", "Tailwind CSS", "Shadcn UI", "Lucide React"],
+      "website": "https://englishub.vercel.app/"
     }
   ]
 }
