@@ -2,16 +2,32 @@
   "projects": [
     {
       "id": 1,
-      "title": "🌐 API RESTful",
-      "description": "RESTful API designed to manage event subscriptions and a referral ranking system.",
+      "title": {
+        "en": "🌐 API RESTful",
+        "pt": "🌐 API RESTful",
+        "es": "🌐 API RESTful"
+      },
+      "description": {
+        "en": "RESTful API designed to manage event subscriptions and a referral ranking system.",
+        "pt": "API RESTful projetada para gerenciar assinaturas de eventos e um sistema de classificação de indicações.",
+        "es": "API RESTful diseñada para gestionar suscripciones de eventos y un sistema de clasificación de referidos."
+      },
       "image": "/unsplash.png",
       "tags": ["Node.js", "TypeScript", "Drizzle ORM", "PostgreSQL", "Redis", "Zod", "Swagger", "Docker"],
       "github": "https://github.com/Viniciusgithu/connect-referral-api"
     },
     {
       "id": 2,
-      "title": "🤖 Python Automations",
-      "description": "Collection of automation scripts using Python, Selenium, and Schedule for daily tasks.",
+      "title": {
+        "en": "🤖 Python Automations",
+        "pt": "🤖 Automações em Python",
+        "es": "🤖 Automatizaciones en Python"
+      },
+      "description": {
+        "en": "Collection of automation scripts using Python, Selenium, and Schedule for daily tasks.",
+        "pt": "Coleção de scripts de automação usando Python, Selenium e Schedule para tarefas diárias.",
+        "es": "Colección de scripts de automatización utilizando Python, Selenium y Schedule para tareas diarias."
+      },
       "image": "/unsplash.png",
       "tags": ["Python", "Selenium", "Schedule", "SMTP", "Gmail API"],
       "github": null,
@@ -19,8 +35,16 @@
     },
     {
       "id": 3,
-      "title": "🌍🗽 English Hub",
-      "description": "English Hub is a platform for learning English, with a focus on curated directory of YouTube videos and resources for English learners. Filter by accent, comprehensible input, shadowing practice, idioms, flashcards and more.",
+      "title": {
+        "en": "🌍🗽 English Hub",
+        "pt": "🌍🗽 English Hub",
+        "es": "🌍🗽 English Hub"
+      },
+      "description": {
+        "en": "English Hub is a platform for learning English, with a focus on curated directory of YouTube videos and resources for English learners. Filter by accent, comprehensible input, shadowing practice, idioms, flashcards and more.",
+        "pt": "English Hub é uma plataforma para aprender inglês, com foco em um diretório curado de vídeos do YouTube e recursos para estudantes de inglês. Filtre por sotaque, input compreensível, prática de shadowing, expressões idiomáticas, flashcards e muito mais.",
+        "es": "English Hub es una plataforma para aprender inglés, centrada en un directorio curado de videos de YouTube y recursos para estudiantes de inglés. Filtre por acento, entrada comprensible, práctica de shadowing, modismos, flashcards y más."
+      },
       "image": "/EnglishHub.png",
       "tags": ["Next.js", "TypeScript", "Tailwind CSS", "Shadcn UI", "Lucide React"],
       "website": "https://englishub.vercel.app/"
