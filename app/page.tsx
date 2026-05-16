@@ -8,18 +8,14 @@ import {
 } from "react-icons/bi";
 import Image from 'next/image'
 import { useLanguage } from "./context/LanguageContext";
+import LanguageSwitcher from "./components/LanguageSwitcher";
 
 export default function Home() {
   const { t, language, setLanguage } = useLanguage();
 
   return (
     <main className="min-h-screen flex items-center justify-center relative">
-      {/* Language Switcher Fixed at Top Right */}
-      <div className="absolute top-5 right-5 flex gap-3 z-50 bg-black/50 p-2 rounded-full backdrop-blur-md border border-gray-700/50">
-        <button onClick={() => setLanguage('en')} className={`text-2xl transition-all duration-300 ${language === 'en' ? 'scale-110 opacity-100 grayscale-0' : 'opacity-50 grayscale hover:grayscale-0 hover:opacity-100'}`} title="English">🇺🇸</button>
-        <button onClick={() => setLanguage('pt')} className={`text-2xl transition-all duration-300 ${language === 'pt' ? 'scale-110 opacity-100 grayscale-0' : 'opacity-50 grayscale hover:grayscale-0 hover:opacity-100'}`} title="Português">🇧🇷</button>
-        <button onClick={() => setLanguage('es')} className={`text-2xl transition-all duration-300 ${language === 'es' ? 'scale-110 opacity-100 grayscale-0' : 'opacity-50 grayscale hover:grayscale-0 hover:opacity-100'}`} title="Español">🇪🇸</button>
-      </div>
+      <LanguageSwitcher />
 
       <section className="w-full max-w-xl m-3 md:m-8 z-50 space-y-8 border border-gray-700/50 rounded-xl p-5 sm:p-10 backdrop-blur-xl bg-black/80">
 
@@ -63,6 +59,16 @@ export default function Home() {
 
             <Link href="/work" className="w-1/2 border bg-black/30 border-gray-700/40 flex group items-center justify-between p-3 cursor-pointer transition-colors duration-200 ease-linear hover:bg-zinc-800/40 rounded-lg">
               <span>{t('projectsLink')}</span>
+              <BiChevronRight className="mr-5 text-2xl translate-x-0 group-hover:translate-x-3 text-gray-300 opacity-0 group-hover:translate-x-3 text-gray-300 opacity-0 group-hover:opacity-100 transition-all duration-200" />
+            </Link>
+
+            <a href="/ViniciusLima.pdf" download className="w-1/2 border bg-black/30 border-gray-700/40 flex group items-center justify-between p-3 cursor-pointer transition-colors duration-200 ease-linear hover:bg-zinc-800/40 rounded-lg">
+              <span>{t('downloadResume')}</span>
+              <BiChevronRight className="mr-5 text-2xl translate-x-0 group-hover:translate-x-3 text-gray-300 opacity-0 group-hover:translate-x-3 text-gray-300 opacity-0 group-hover:opacity-100 transition-all duration-200" />
+            </a>
+
+            <Link href="/skills" className="w-1/2 border bg-black/30 border-gray-700/40 flex group items-center justify-between p-3 cursor-pointer transition-colors duration-200 ease-linear hover:bg-zinc-800/40 rounded-lg">
+              <span>{t('skillsLink')}</span>
               <BiChevronRight className="mr-5 text-2xl translate-x-0 group-hover:translate-x-3 text-gray-300 opacity-0 group-hover:translate-x-3 text-gray-300 opacity-0 group-hover:opacity-100 transition-all duration-200" />
             </Link>
 

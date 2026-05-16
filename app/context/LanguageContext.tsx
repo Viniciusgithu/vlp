@@ -19,10 +19,25 @@ const dictionaries: Record<Language, Dictionary> = {
     "inquiries": "for any inquiries or to discuss potential opportunities.",
     "aboutLink": "About",
     "projectsLink": "Projects",
+    "skillsLink": "Skills",
+    "downloadResume": "Download Resume",
     
     // Global
     "backHome": "Back to Home",
     "projects": "Projects",
+    
+    // Skills
+    "skillsTitle": "Skills & Expertise",
+    "growthAnalytics": "Growth & Analytics",
+    "growthAnalyticsText": "Growth Engineering, Process Automation, Conversion Rate Optimization (CRO), Technical SEO, Data Extraction (Web Scraping), Metrics Analysis.",
+    "documentationProcesses": "Documentation & Processes",
+    "documentationProcessesText": "Organization of Corporate Wikis, Development of Operational Playbooks, Business Process Mapping, API Documentation.",
+    "technologiesFrameworks": "Technologies & Frameworks",
+    "technologiesFrameworksText": "Python (Selenium, PyAutoGUI), React.js, Next.js, TypeScript, Node.js, RESTful APIs, SQL/NoSQL.",
+    "managementTools": "Management Tools",
+    "managementToolsText": "Notion, ClickUp, Trello, Jira, Google Workspace, GitHub.",
+    "businessSystems": "Business Systems",
+    "businessSystemsText": "Fundamentals of CRM (Customer Relationship Management) and ERP (Enterprise Resource Planning).",
     
     // About
     "aboutMe": "About me",
@@ -68,10 +83,25 @@ const dictionaries: Record<Language, Dictionary> = {
     "inquiries": "para qualquer dúvida ou para discutir possíveis oportunidades.",
     "aboutLink": "Sobre",
     "projectsLink": "Projetos",
+    "skillsLink": "Habilidades",
+    "downloadResume": "Baixar Currículo",
     
     // Global
     "backHome": "Voltar para o Início",
     "projects": "Projetos",
+    
+    // Skills
+    "skillsTitle": "Habilidades & Expertise",
+    "growthAnalytics": "Crescimento & Análise",
+    "growthAnalyticsText": "Engenharia de Crescimento, Automação de Processos, Otimização de Taxa de Conversão (CRO), SEO Técnico, Extração de Dados (Web Scraping), Análise de Métricas.",
+    "documentationProcesses": "Documentação & Processos",
+    "documentationProcessesText": "Organização de Wikis Corporativas, Desenvolvimento de Manuais Operacionais, Mapeamento de Processos de Negócio, Documentação de APIs.",
+    "technologiesFrameworks": "Tecnologias & Frameworks",
+    "technologiesFrameworksText": "Python (Selenium, PyAutoGUI), React.js, Next.js, TypeScript, Node.js, APIs RESTful, SQL/NoSQL.",
+    "managementTools": "Ferramentas de Gestão",
+    "managementToolsText": "Notion, ClickUp, Trello, Jira, Google Workspace, GitHub.",
+    "businessSystems": "Sistemas de Negócio",
+    "businessSystemsText": "Fundamentos de CRM (Customer Relationship Management) e ERP (Enterprise Resource Planning).",
     
     // About
     "aboutMe": "Sobre mim",
@@ -117,10 +147,25 @@ const dictionaries: Record<Language, Dictionary> = {
     "inquiries": "para cualquier consulta o para discutir posibles oportunidades.",
     "aboutLink": "Sobre mí",
     "projectsLink": "Proyectos",
+    "skillsLink": "Habilidades",
+    "downloadResume": "Descargar Currículum",
     
     // Global
     "backHome": "Volver al Inicio",
     "projects": "Proyectos",
+    
+    // Skills
+    "skillsTitle": "Habilidades & Experiencia",
+    "growthAnalytics": "Crecimiento & Análisis",
+    "growthAnalyticsText": "Ingeniería de Crecimiento, Automatización de Procesos, Optimización de Tasa de Conversión (CRO), SEO Técnico, Extracción de Datos (Web Scraping), Análisis de Métricas.",
+    "documentationProcesses": "Documentación & Procesos",
+    "documentationProcessesText": "Organización de Wikis Corporativas, Desarrollo de Manuales Operativos, Mapeo de Procesos de Negocio, Documentación de APIs.",
+    "technologiesFrameworks": "Tecnologías & Frameworks",
+    "technologiesFrameworksText": "Python (Selenium, PyAutoGUI), React.js, Next.js, TypeScript, Node.js, APIs RESTful, SQL/NoSQL.",
+    "managementTools": "Herramientas de Gestión",
+    "managementToolsText": "Notion, Trello, Jira, Google Workspace, GitHub.",
+    "businessSystems": "Sistemas de Negocio",
+    "businessSystemsText": "Fundamentos de CRM (Customer Relationship Management) y ERP (Enterprise Resource Planning).",
     
     // About
     "aboutMe": "Sobre mí",
