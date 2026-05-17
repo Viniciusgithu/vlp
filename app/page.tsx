@@ -6,9 +6,11 @@ import {
   BiBuilding,
   BiChevronRight
 } from "react-icons/bi";
+
 import Image from 'next/image'
 import { useLanguage } from "./context/LanguageContext";
 import LanguageSwitcher from "./components/LanguageSwitcher";
+import Whatsapp from "./components/Whatsapp";
 
 export default function Home() {
   const { t, language, setLanguage } = useLanguage();
@@ -17,7 +19,7 @@ export default function Home() {
     <main className="min-h-screen flex items-center justify-center relative">
       <LanguageSwitcher />
 
-      <section className="w-full max-w-xl m-3 md:m-8 z-50 space-y-8 border border-gray-700/50 rounded-xl p-5 sm:p-10 backdrop-blur-xl bg-black/80">
+      <section className="w-full max-w-xl m-3 md:m-8 z-50 space-y-8 border border-green-700/50 rounded-xl p-5 sm:p-10 backdrop-blur-xl bg-black/80">
 
         <div className="flex sm:flex-row sm:justify-between sm:items-center flex-col-reverse items-start gap-3 sm:gap-10">
           <div className="flex items-center gap-3">
@@ -72,10 +74,13 @@ export default function Home() {
               <BiChevronRight className="mr-5 text-2xl translate-x-0 group-hover:translate-x-3 text-gray-300 opacity-0 group-hover:translate-x-3 text-gray-300 opacity-0 group-hover:opacity-100 transition-all duration-200" />
             </Link>
 
+            <Whatsapp/>
+
           </section>
         </nav>
 
       </section>
+
     </main>
   );
 }

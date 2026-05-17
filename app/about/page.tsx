@@ -1,9 +1,8 @@
 'use client'
 
-import { Button } from "@/app/components/ui/button";
-import Link from "next/link";
-import { BsArrowLeft } from "react-icons/bs";
+
 import { useLanguage } from "../context/LanguageContext";
+import BackToHome from "../components/BackToHome";
 
 
 export default function About() {
@@ -12,16 +11,11 @@ export default function About() {
   return (
     <main className="min-h-screen flex items-center justify-center">
 
-      <section className="max-w-xl m-3 md:m-8 z-50 w-full space-y-8 border rounded-x1 border-gray-700/50 p-5 sm:p-10 backdrop-blur-xl bg-black/80">
-        <Link href="/">
-          <Button variant="ghost" className="hover:bg-black/50 duration-300 hover:text-white rounded-full mb-5 cursor-pointer">
-            <BsArrowLeft className="mr-2" />
-            <span>{t('backHome')}</span>
-          </Button>
-        </Link>
+      <section className="max-w-xl m-3 md:m-8 z-50 w-full space-y-8 border rounded-x1 border-green-700/50 p-5 sm:p-10 backdrop-blur-xl bg-black/80">
+      <BackToHome/>
 
         {/* About me */}
-        <div className="space-y-6">
+        <div className="space-y-6 mt-8">
           <h1 className="text-2xl font-bold text-emerald-400">{t('aboutMe')}</h1>
           <div className="space-y-4 text-neutral-200 text-pretty tracking-tight border rounded-xl border-gray-700/50 p-5 sm:p-10 backdrop-blur-xl bg-black/80 hover:scale-110 duration-300">
             <p>{t('aboutText')}</p>

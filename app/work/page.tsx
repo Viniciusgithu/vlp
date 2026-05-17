@@ -7,6 +7,7 @@ import { BiWorld, BiLogoGithub } from "react-icons/bi";
 import { BsArrowLeft } from "react-icons/bs";
 import projectsData from "../data/projects.json";
 import { useLanguage } from "../context/LanguageContext";
+import BackToHome from "../components/BackToHome";
 
 
 export default function About() {
@@ -15,19 +16,15 @@ export default function About() {
 
     return (
         <main className="min-h-screen flex items-center justify-center">
-            <section className="max-w-4xl m-3 md:m-8 z-50 w-full space-y-8 border rounded-xl border-gray-700/50 p-5 sm:p-10 backdrop-blur-xl bg-black/80">
-                <Link href="/">
-                    <Button variant="ghost" className="hover:bg-black/50 duration-300 hover:text-white rounded-full cursor-pointer">
-                        <BsArrowLeft className="mr-2" />
-                        <span>{t('backHome')}</span>
-                    </Button>
-                </Link>
+            <section className="max-w-4xl m-3 md:m-8 z-50 w-full space-y-8 border rounded-xl border-green-700/50 p-5 sm:p-10 backdrop-blur-xl bg-black/80">
+
+                <BackToHome />
 
                 <div className="space-y-6">
                     <h1 className="text-2xl font-bold text-center text-emerald-400">{t('projects')}</h1>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         {projects.map((project) => (
-                            <div key={project.id} className="group overflow-hidden rounded-lg border hover:scale-105 border-neutral-800/70 bg-black/50 transition-all duration-300 mb-5 p-5">
+                            <div key={project.id} className="group overflow-hidden rounded-lg border hover:scale-105 border-gray-700/50 bg-black/50 transition-all duration-300 mb-5 p-5">
 
                                 <section><Image src={project.image} alt={project.title[language as keyof typeof project.title] || project.title.en} width={500} height={500} /></section>
 
