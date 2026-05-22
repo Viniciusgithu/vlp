@@ -12,12 +12,35 @@
         "pt": "API RESTful projetada para gerenciar assinaturas de eventos e um sistema de classificação de indicações.",
         "es": "API RESTful diseñada para gestionar suscripciones de eventos y un sistema de clasificación de referidos."
       },
-      "image": "/unsplash.png",
+      "image": "/api_rest.png",
       "tags": ["Node.js", "TypeScript", "Drizzle ORM", "PostgreSQL", "Redis", "Zod", "Swagger", "Docker"],
       "github": "https://github.com/Viniciusgithu/connect-referral-api"
     },
     {
       "id": 2,
+      "title": {
+        "en": "🎫 Support Tickets API",
+        "pt": "🎫 API de Tickets de Suporte",
+        "es": "🎫 API de Tickets de Soporte"
+      },
+      "description": {
+        "en": "A support ticket management API built entirely with native Node.js modules. It features a custom router, request body parsing, and a file-based JSON database for persistence without any external dependencies.",
+        "pt": "Uma API de gerenciamento de tickets de suporte construída inteiramente com módulos nativos do Node.js. Possui roteamento customizado, parser de requisições e um banco de dados baseado em arquivo (JSON) para persistência, sem dependências externas.",
+        "es": "Una API de gestión de tickets de soporte construida completamente con módulos nativos de Node.js. Cuenta con enrutamiento personalizado, análisis de solicitudes y una base de datos basada en archivos (JSON) para persistencia sin dependencias externas."
+      },
+      "image": "/api_rest.png",
+      "tags": [
+        "Node.js", 
+        "JavaScript", 
+        "API RESTful", 
+        "Native Modules", 
+        "JSON Persistence"
+      ],
+      "github": "https://github.com/viniciusgithu/support-tickets",
+      "isPrivate": false
+    },
+    {
+      "id": 3,
       "title": {
         "en": "🤖 Python Automations",
         "pt": "🤖 Automações em Python",
@@ -34,7 +57,7 @@
       "isPrivate": true
     },
     {
-      "id": 3,
+      "id": 4,
       "title": {
         "en": "🌍🗽 English Hub",
         "pt": "🌍🗽 English Hub",
@@ -50,7 +73,7 @@
       "website": "https://englishub.vercel.app/"
     },
     {
-      "id": 4,
+      "id": 5,
       "title": {
         "en": "💬 Feedback Platform",
         "pt": "💬 Plataforma de Feedback",
@@ -62,9 +85,34 @@
         "es": "Una plataforma de feedback construida con Next.js, TypeScript y Tailwind CSS. Permite a los usuarios enviar y gestionar feedback sobre productos o servicios." 
       },
       "image": "/FeedbackPlataform.png",
-      "tags": ["Next.js", "TypeScript", "Tailwind CSS", "Prisma ORM", "Lucide React", "APIRESTful"],
+      "tags": ["Next.js", "TypeScript", "Tailwind CSS", "Prisma ORM", "Lucide React", "API RESTful"],
       "github": null,
       "isPrivate": null
+    },
+    {
+      "id": 6,
+      "title": {
+        "en": "✂️ HairDay",
+        "pt": "✂️ HairDay",
+        "es": "✂️ HairDay"
+      },
+      "description": {
+        "en": "An appointment management system for barbers built with React, Fastify, Prisma, and Tailwind CSS. It features dynamic scheduling, double-booking prevention, and daily agenda organization by shifts.",
+        "pt": "Um sistema de gestão de agendamentos para barbeiros construído com React, Fastify, Prisma e Tailwind CSS. Possui agendamento dinâmico, prevenção de duplicidades e organização da agenda diária por turnos.",
+        "es": "Un sistema de gestión de citas para barberos construido con React, Fastify, Prisma y Tailwind CSS. Cuenta con programación dinámica, prevención de reservas duplicadas y organización de la agenda diaria por turnos."
+      },
+      "image": "/HairDay.png",
+      "tags": [
+        "React", 
+        "Fastify", 
+        "TypeScript", 
+        "Tailwind CSS", 
+        "Prisma ORM", 
+        "SQLite", 
+        "Vite"
+      ],
+      "github": "https://github.com/viniciusgithu/hairday",
+      "isPrivate": false
     }
   ]
 }
