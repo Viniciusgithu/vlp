@@ -11,6 +11,7 @@ import Image from 'next/image'
 import { useLanguage } from "./context/LanguageContext";
 import LanguageSwitcher from "./components/LanguageSwitcher";
 import Whatsapp from "./components/Whatsapp";
+import GitHubButtom from "./components/GitHubButtom";
 
 export default function Home() {
   const { t, language, setLanguage } = useLanguage();
@@ -24,7 +25,7 @@ export default function Home() {
         <div className="flex sm:flex-row sm:justify-between sm:items-center flex-col-reverse items-start gap-3 sm:gap-10">
           <div className="flex items-center gap-3">
             <BiBuilding className="w-5 h-5" />
-            <h3 className="text-gray-400">{t('worldwide')}</h3>
+            <h3 className="text-gray-400">{t('worldwide')}</h3> <GitHubButtom />
           </div>
 
           <Button variant="ghost" className="hover:bg-black/50 duration-300 hover:text-white rounded-full">
@@ -74,7 +75,10 @@ export default function Home() {
               <BiChevronRight className="mr-5 text-2xl translate-x-0 group-hover:translate-x-3 text-gray-300 opacity-0 group-hover:translate-x-3 text-gray-300 opacity-0 group-hover:opacity-100 transition-all duration-200" />
             </Link>
 
-            <Whatsapp/>
+            <section className="flex gap-3">
+              
+              <Whatsapp/>
+            </section>
 
           </section>
         </nav>
